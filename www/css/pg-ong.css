@@ -8,8 +8,7 @@ body {
     height: 100%;
     width: 100%;
     background: #30A5EA;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    
 }
 
 .ajudato {
@@ -37,7 +36,7 @@ body {
     background: transparent;
     border: none;
     padding: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 40px;
     width: 0;
@@ -187,78 +186,99 @@ input {
     font-weight: bold;
 }
 
-/* Card styles */
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 165px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 5px;
-    overflow: hidden;
+.textos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
-    background-color: #30A5EA;
-    display: flex;
-    flex-direction: column;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.card img {
-    width: 75%;
-    margin-top: 10px;
-    border-radius: 10px;
-    align-self: center;
-}
-
-.card-text {
-    padding: 4px;
-    text-align: right;
-    overflow: auto;
-    flex-grow: 1;
-    scrollbar-width: thin;
-    scrollbar-color: #3498db #4ACFCA;
-}
-
-.card-text::-webkit-scrollbar {
-    width: 5px;
-}
-
-.card-text::-webkit-scrollbar-thumb {
-    background-color: #3498db;
-}
-
-.card-text::-webkit-scrollbar-track {
-    background-color: #4ACFCA;
-}
-
-.card-text p:first-child {
-    font-size: 20px;
+.textos h1 {
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #056BB3;
+    font-style: oblique;
 }
 
-.card-container .card:hover {
-    background-color: #0681D1;
-    color: white;
-    margin-top: -1px;
-    box-shadow: 2px 5px 5px #056BB3;
-    border-color: #056BB3;
-    transition: 0.5s;
+.textos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #056BB3;
 }
 
-.read-more-button {
-    background-color: #056BB3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+.textos p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.textos h2:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+.textos h2:nth-of-type(3),
+.textos h2:nth-of-type(5),
+.textos h2:nth-of-type(7) {
+    margin-top: 20px;
+}
+
+.textos h2:nth-of-type(4),
+.textos h2:nth-of-type(6),
+.textos h2:nth-of-type(8) {
+    margin-top: 10px;
+}
+
+.textos h2:nth-of-type(4),
+.textos h2:nth-of-type(6),
+.textos h2:nth-of-type(8),
+.textos p:nth-of-type(3),
+.textos p:nth-of-type(5),
+.textos p:nth-of-type(7) {
+    color: #333;
+}
+
+.textos p:nth-of-type(9),
+.textos p:nth-of-type(11) {
+    font-weight: bold;
+}
+
+.textos h2:nth-of-type(9),
+.textos h2:nth-of-type(11) {
+    margin-top: 30px;
+    color: #056BB3;
+}
+
+.textos h2:nth-of-type(10) {
+    margin-top: 10px;
+}
+
+.textos h2:nth-of-type(12) {
+    margin-top: 20px;
+}
+
+.textos h2:nth-of-type(13) {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.textos p:nth-of-type(13),
+.textos p:nth-of-type(15) {
     font-size: 16px;
-    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #333;
 }
+
+.textos p:nth-of-type(16),
+.textos p:nth-of-type(18) {
+    margin-bottom: 30px;
+}
+
 
 .footer {
     position: fixed;
@@ -284,3 +304,4 @@ input {
 .footer-button:hover {
     background-color: #056BB3;
 }
+
